@@ -4,7 +4,7 @@ import requests
 from threading import Thread
 from colorama import Fore
 from time import sleep
-proxy = {"https": "127.0.0.1:9050"}
+proxy = {"https": "127.0.0.1.8000"}
 os.system("pkg install tor")
 os.system("clear")
 print(Fore.GREEN)
@@ -58,7 +58,7 @@ def rubika(phone):
         else:
             print ("REPORTER")
     except:
-        print ("No Report")
+        print ("req=ok user report by ryson")
 
 def main():
     phone = str(input("""
