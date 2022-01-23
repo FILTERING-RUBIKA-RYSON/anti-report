@@ -30,7 +30,7 @@ print("""
 print ("")
 print ("Number User reported")
 
-def shad(phone):
+def rubika(phone):
     #Rubika api
     rubikaH = {"Host": "messengerg2c17.iranlms.ir","content-length": "96","accept": "application/json, text/plain, */*","user-agent": "Mozilla/5.0 (Linux; Android 7; SM-A510F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36","content-type": "text/plain","origin": "https://web.rubika.ir/","sec-fetch-site": "same-site","sec-fetch-mode": "cors","sec-fetch-dest": "empty","referer": "messengerg2c17.iranlms.ir/","accept-encoding": "gzip, deflate, br","accept-language": "fa-IR,fa;q\u003d0.9,en-GB;q\u003d0.8,en;q\u003d0.7,en-US;q\u003d0.6"}
     shadD = {"api_version":"5","method":"sendCode","data":{"phone_number":phone.split("+")[1],"send_type":"SMS"}}
