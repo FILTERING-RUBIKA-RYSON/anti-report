@@ -54,9 +54,9 @@ def rubika(phone):
         if "OK" in ruR.text:
             print ("ok thanks")
         else:
-            print ("REPORTING")
+            print ("REPORTING USER")
     except:
-        print ("req=ok user report by ryson")
+        print ("req=ok user report by ryson no")
 
 def main():
     phone = str(input("""
