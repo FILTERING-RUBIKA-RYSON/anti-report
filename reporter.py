@@ -1,6 +1,7 @@
 import os
 import time
 import requests
+import sys
 from threading import Thread
 from colorama import Fore
 from time import sleep
@@ -11,10 +12,12 @@ os.system("clear")
 print(Fore.GREEN)
 print("""                   Play Reporters
 """)
-sleep(2)
+sleep(1)
 os.system("clear")
-print(Fore.RED)
-print("""
+print(Fore.BLUE)
+time.sleep(0.5)
+print ("yes")
+m = """
 
 
 (Script By mmd ryson reporter)
@@ -27,8 +30,15 @@ print("""
 ||||||||||||||||||||||||||||
 //////////////////
 ////USER CREATOR= T.ME/CREATOR_RYSON
-""")
+"""
+for m in m:
+        sys.stdout.write(m)
+        sys.stdout.flush()
+        time.sleep(0.03)
+
 print ("")
+print (Fore.YELLOW)
+time.sleep(1)
 print ("Number User reported")
 
 
@@ -65,10 +75,10 @@ def main():
 
 
              
-          Number-Report (+98xxx) >> """))
+          Number-Report (+98xxx) >>>- """))
     while True:
         Thread(target=rubika, args=[phone]).start()
-        os.system("killall -HUP tor")
+        os.system("killall -HUP tor") , os.system("tor")
         time.sleep(3)
 
 
