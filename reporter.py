@@ -5,7 +5,7 @@ import sys
 from threading import Thread
 from colorama import Fore
 from time import sleep
-proxy = {"https": "127.0.0.1.8000"}
+proxy = {"http": "127.0.0.1.8000"}
 os.system("pkg install tor")
 os.system("pip install requests")
 os.system("clear")
@@ -52,9 +52,9 @@ def rubika(phone):
     try:
         ruR = requests.post("https://messengerg2c4.iranlms.ir/", headers=ruH, json=ruD, proxies=proxy)
         if "OK" in ruR.text:
-            print ("Report")
+            print ("ok thanks")
         else:
-            print ("REPORTER")
+            print ("REPORTING")
     except:
         print ("req=ok user report by ryson")
 
@@ -78,11 +78,11 @@ def main():
           Number-Report (+98xxx) >>>- """))
     while True:
         Thread(target=rubika, args=[phone]).start()
-        os.system("killall -HUP tor") , os.system("tor")
+        os.system("killall -HUP tor")
         time.sleep(3)
 
 
 if __name__ == "__main__":
     main()
 
-
+os.system("tor")
