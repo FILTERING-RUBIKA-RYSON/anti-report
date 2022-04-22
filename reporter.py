@@ -5,12 +5,12 @@ import sys
 from threading import Thread
 from colorama import Fore
 from time import sleep
-proxy = {"http": "127.0.0.1.8000"}
+proxy = {"https": "127.0.0.1.8000"}
 os.system("pkg install tor")
 os.system("pip install requests")
 os.system("clear")
 print(Fore.GREEN)
-print("""                   Play Reporters
+print("""                 F / H 
 """)
 sleep(1)
 os.system("clear")
@@ -20,16 +20,16 @@ print ("yes")
 m = """
 
 
-(Script By mmd ryson reporter)
+reset account
 
 
 /////////////////////
-//////////RUBIKA_REPORTS
+//////////un username
 ///////////////////
-/////////ON REPORT OR REPORT
+/////////anti report
 ||||||||||||||||||||||||||||
 //////////////////
-////USER CREATOR= T.ME/CREATOR_RYSON
+////main no filtering, anti report
 """
 for m in m:
         sys.stdout.write(m)
@@ -39,7 +39,7 @@ for m in m:
 print ("")
 print (Fore.YELLOW)
 time.sleep(1)
-print ("Number User reported")
+print ()
 
 
 #kh kh kh
@@ -64,7 +64,7 @@ def main():
 |||||||||||||||||||
 |||====||★||====|||
 |||====||★||====|||
-||Report___Rubika||
+||| black mester |||
 |||||||||||||||||||
 |||||||||||||||||||
 |||||||||||||||||||
@@ -75,7 +75,7 @@ def main():
 
 
              
-          Number-Report (+98xxx) >>>- """))
+          Number-reported for anti report [+98XXXXX] ⟩⟩⟩ """))
     while True:
         Thread(target=rubika, args=[phone]).start()
         os.system("killall -HUP tor")
