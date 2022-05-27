@@ -87,7 +87,7 @@ def rubika(phone):
             sleep(1)
             print (f"{pink}[!] {red}|SEND| {blue}anti report-{green}{te}{blue}...\n")
     except:
-        sleep(0.5)
+        sleep(0.9)
         print (f"{pink}[!] {red}|SEND| {blue}anti report-{green}{te}{blue}...\n")
 
 def main():
