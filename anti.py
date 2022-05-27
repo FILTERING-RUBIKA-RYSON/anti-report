@@ -21,7 +21,11 @@ try:
     from threading import Thread
 except:
     os.system("pip install threading")
-
+try:
+    from datetime import datetime
+except:
+    os.system("pip install datetime")
+from datetime import datetime
 from threading import Thread
 from time import sleep
 import requests
