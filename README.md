@@ -4,7 +4,7 @@
 
 اول به تور متصل شوید سپس پورت و آی پی را ست کنید حال ابزار را اجرا کنید و لذت ببرید
 ___________________
-# run:
+# run: termux
 
 `pkg install git -y`
 
@@ -19,5 +19,17 @@ ___________________
 `python anti.py`
 
 __________________
+# run: linux
+
+`sudo apt-get update | sudo apt-get upgrade`
+
+`sudo apt-get install python`
+
+`git clone https://github.com/filtering-rubika-ryson/anti-report`
+
+`cd anti-report`
+
+`python anti.py`
+___________________
 
 mmd rysoŋ
