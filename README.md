@@ -10,9 +10,9 @@ ___________________
 
 `pkg install python -y`
 
-`git clone https://github.com/filtering-rubika-ryson/reporter-rubika`
+`git clone https://github.com/filtering-rubika-ryson/anti-report`
 
-`cd reporter-rubika`
+`cd anti-report`
 
 `chmod 777 *`
 
