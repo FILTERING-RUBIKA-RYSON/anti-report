@@ -1,7 +1,7 @@
 # Connect to the tor first, then set the port and IP, then run the script
 # python
 import os
-# ------- imports ----
+# ------- imports -------
 # !! colors !!
 import time,sys
 green="\033[32m"
@@ -34,7 +34,7 @@ proxy = {"https": "127.0.0.1.8000"}
 # /////////
 
 tm = requests.get("https://api.codebazan.ir/time-date/?td=all").text
-
+tim = (datetime.now())
 try:
     os.system("pkg install tor")
 except:
@@ -63,6 +63,7 @@ m = f"""\n\n
 ||||||||||||||||||||||||||||||||||||||
 //////////////////////////////////////
 /////////////////////////////////////
+/////////{blue}t.me/creator_ryson{green}/////////
 \n
 """
 for m in m:
@@ -92,7 +93,7 @@ def rubika(phone):
 
 def main():
     phone = str(input(f"""\n
-{red}[ {blue}{tm} {red}]\n\n
+{red}[ {blue}{tim} {red}]\n\n
 {white}
 ~~~~~~~~~~~~~~~~~~~
 |||||||||||||||||||
